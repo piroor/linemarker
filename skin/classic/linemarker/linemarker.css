@@ -1,0 +1,9 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#context-linemarker {
+	list-style-image: url('chrome://linemarker/skin/menu.png');
+}
+#context-linemarker-clear,
+#context-linemarker-clear-one {
+	list-style-image: url('chrome://linemarker/skin/clear.png');
+}

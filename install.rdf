@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{3354F302-9928-4b07-B947-82F65A8FF70D}</em:id>
+
+		<em:version>2.0.2006072201</em:version>
+
+
+		<em:targetApplication>
+			<Description><!-- Firefox -->
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>2.0.0.*</em:maxVersion>
+			</Description>
+			<Description><!-- Mozilla Suite -->
+				<em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.8</em:maxVersion>
+			</Description>
+			<Description><!-- Netscape Browser 8 -->
+				<em:id>{3db10fab-e461-4c80-8b97-957ad5f8ea47}</em:id>
+				<em:minVersion>8.0</em:minVersion>
+				<em:maxVersion>8.1</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+		<em:name>Line Marker</em:name>
+		<em:description>Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection.</em:description>
+		<em:creator>SHIMODA Hiroshi</em:creator>
+		<em:homepageURL>http://piro.sakura.ne.jp/xul/_linemarker.html.en</em:homepageURL>
+		<em:updateURL>http://piro.sakura.ne.jp/xul/xul.rdf.en</em:updateURL>
+
+
+		<em:iconURL>chrome://linemarker/content/icon.png</em:iconURL>
+
+
+		<em:file>
+			<Description about="urn:mozilla:extension:file:linemarker.jar">
+				<em:package>content/linemarker/</em:package>
+				<em:locale>locale/en-US/linemarker/</em:locale>
+				<em:locale>locale/ja-JP/linemarker/</em:locale>
+				<em:skin>skin/classic/linemarker/</em:skin>
+			</Description>
+		</em:file>
+	</Description>
+</RDF>

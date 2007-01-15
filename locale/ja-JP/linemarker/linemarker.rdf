@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:LM="http://www.cc-net.or.jp/~piro/linemarker#">
+
+<!-- ラインマーカー 1.0 マーカー色定義ファイル -->
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the Line Marker.
+   -
+   - The Initial Developer of the Original Code is SHIMODA Hiroshi.
+   - Portions created by the Initial Developer are Copyright (C) 2002-2006
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s): SHIMODA Hiroshi <piro@p.club.ne.jp>
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+	<RDF:Seq about="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:root">
+
+<!--
+Sample:
+
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:色名1"
+				LM:Name="色名1"
+				LM:Forward="white"
+				LM:Background="rgb(0, 80, 80)"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:色名2"
+				LM:Name="色名2"
+				LM:Forward="#FFFFFF"
+				LM:Background="rgb(10%, 20%, 20%)"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:スタイル名"
+				LM:Name="スタイル名"
+				LM:Style="outline: orange dotted medium; -moz-outline: orange dotted medium !important; background: yellow !important; color: black !important;"/>
+		</RDF:li>
+
+色はCSSの書式で指定して下さい。
+色名に日本語を使う場合、UTF-8で保存する必要があります。
+
+-->
+
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:スタイル1"
+				LM:Name="スタイル1"
+				LM:Style="border-bottom: #00FF00 medium solid !important;"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:スタイル2"
+				LM:Name="スタイル2"
+				LM:Style="border: orange dotted medium !important; background: yellow !important; color: black !important;"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:スタイル3"
+				LM:Name="スタイル3"
+				LM:Style="border: 2px blue solid !important; background: #BBFEFF !important; color: black !important;"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:黒"
+				LM:Name="黒"
+				LM:Forward="#FFFFFF"
+				LM:Background="#000000"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:白"
+				LM:Name="白"
+				LM:Forward="#000000"
+				LM:Background="#FFFFFF"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:赤"
+				LM:Name="赤"
+				LM:Forward="#FFFFFF"
+				LM:Background="#FF0000"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:黄緑"
+				LM:Name="黄緑"
+				LM:Forward="#000000"
+				LM:Background="#00FF00"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:青"
+				LM:Name="青"
+				LM:Forward="#FFFF00"
+				LM:Background="#0000FF"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:水色"
+				LM:Name="水色"
+				LM:Forward="#000000"
+				LM:Background="#00FFFF"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:赤紫"
+				LM:Name="赤紫"
+				LM:Forward="#FFFFFF"
+				LM:Background="#FF00FF"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:黄"
+				LM:Name="黄"
+				LM:Forward="#0000FF"
+				LM:Background="#FFFF00"/>
+		</RDF:li>
+		<RDF:li>
+			<RDF:Description
+				ID="chrome://linemarker/content/linemarker.rdf#urn:ColorSet:灰"
+				LM:Name="灰"
+				LM:Forward="#FFFFFF"
+				LM:Background="#7D7D7D"/>
+		</RDF:li>
+
+	</RDF:Seq>
+
+</RDF:RDF>
