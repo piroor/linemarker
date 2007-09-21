@@ -3,17 +3,32 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLI43lgUhWE0E7bfiuTrQMKIP53KM3w71VEPc9FxE7YS3Hpr85dC/GgEUDPd6xD7UP7ckzEusN49LCAKoipepxgyAWzQjZ3CzvkD7PWsZFTi7lpj9ytYDysoFwHs0L96i5oiVopNj1NQM2AC0Y5Lr0b6lz2L5ece0/z6monpZXPQIDAQAB"
                    em:id="{3354F302-9928-4b07-B947-82F65A8FF70D}"
                    em:name="Line Marker"
                    em:version="2.0.2006072201+"
                    em:creator="SHIMODA Hiroshi"
                    em:description="Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection."
                    em:homepageURL="http://piro.sakura.ne.jp/xul/_linemarker.html.en"
-                   em:iconURL="chrome://linemarker/content/icon.png"
-                   em:optionsURL="">
+                   em:iconURL="chrome://linemarker/content/icon.png">
+<!--
+                   em:optionsURL=""
+-->
 
 
-    <em:updateURL>https://pub.cozmixng.org/~piro/xul/xul.rdf.en</em:updateURL>
+    <em:updateURL>http://piro.sakura.ne.jp/xul/update.rdf</em:updateURL>
+
+
+    <em:localized>
+      <RDF:Description em:locale="en-US"
+                       em:name="Line Marker"
+                       em:description="Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection."/>
+    </em:localized>
+    <em:localized>
+      <RDF:Description em:locale="ja-JP"
+                       em:name="ラインマーカー"
+                       em:description="コンテキストメニューに「ラインマーカー」機能を追加し、選択範囲のテキストの色を変えられるようにします。"/>
+    </em:localized>
 
 
     <em:targetApplication>
