@@ -22,12 +22,14 @@
     <em:localized>
       <RDF:Description em:locale="en-US"
                        em:name="Line Marker"
-                       em:description="Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection."/>
+                       em:description="Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection."
+                       em:homepageURL="http://piro.sakura.ne.jp/xul/_linemarker.html.en"/>
     </em:localized>
     <em:localized>
       <RDF:Description em:locale="ja-JP"
                        em:name="ラインマーカー"
-                       em:description="コンテキストメニューに「ラインマーカー」機能を追加し、選択範囲のテキストの色を変えられるようにします。"/>
+                       em:description="コンテキストメニューに「ラインマーカー」機能を追加し、選択範囲のテキストの色を変えられるようにします。"
+                       em:homepageURL="http://piro.sakura.ne.jp/xul/_linemarker.html"/>
     </em:localized>
 
 
