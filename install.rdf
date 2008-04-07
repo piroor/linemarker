@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{3354F302-9928-4b07-B947-82F65A8FF70D}"
                    em:name="Line Marker"
-                   em:version="2.0.2008040701"
+                   em:version="2.0.2008040702"
                    em:creator="SHIMODA Hiroshi"
                    em:description="Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection."
                    em:homepageURL="http://piro.sakura.ne.jp/xul/_linemarker.html.en"

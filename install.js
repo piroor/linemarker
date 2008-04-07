@@ -1,4 +1,4 @@
-var version     = '2.0.2008040701',
+var version     = '2.0.2008040702',
 	displayName = 'Line Marker',
 	appName     = 'linemarker',
 	author      = 'SHIMODA Hiroshi',

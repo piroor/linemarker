@@ -577,13 +577,16 @@ load : function(aWindow)
 
 onLoad : function(aEvent)
 {
-	if (aEvent.originalTarget.defaultView.top == _content)
+	if (aEvent.originalTarget &&
+		aEvent.originalTarget.defaultView &&
+		aEvent.originalTarget.defaultView.top == _content)
 		window.setTimeout('LineMarkerService.load(_content);', 0);
 },
 
 onSelect : function(aEvent)
 {
-	if (aEvent.originalTarget.localName == 'tabs' &&
+	if (aEvent.originalTarget &&
+		aEvent.originalTarget.localName == 'tabs' &&
 		aEvent.originalTarget.ownerDocument == document)
 		window.setTimeout('LineMarkerService.load(_content);', 0);
 },
