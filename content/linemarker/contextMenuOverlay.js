@@ -41,6 +41,12 @@ IOService : Components.classes['@mozilla.org/network/io-service;1'].getService(C
 XHTMLNS : 'http://www.w3.org/1999/xhtml',
 
 
+get popupNode()
+{
+	var popup = document.getElementById('contentAreaContextMenu');
+	return popup && popup.triggerNode || document.popupNode;
+},
+
 setMarker : function(aNode, aData, aDelay)
 {
 	var targetWindow = aData ? aData.window : document.commandDispatcher.focusedWindow ;
@@ -66,7 +72,7 @@ setMarker : function(aNode, aData, aDelay)
 			return true;
 		}
 		else if (aNode.id == 'context-linemarker-clear-one') {
-			var node = this.mFindMarker(document.popupNode);
+			var node = this.mFindMarker(this.popupNode);
 			if (node) this.clearOneMarker(winWrapper.location.href, node);
 			return true;
 		}
@@ -358,10 +364,10 @@ updateContextMenu : function()
 	if (gCM)
 		menuItem.hidden = !gCM.isTextSelected;
 
-	var nodes = LineMarkerService.getAllMarkersInDocument(document.popupNode.ownerDocument);
+	var nodes = LineMarkerService.getAllMarkersInDocument(this.popupNode.ownerDocument);
 	clearItem.hidden = !nodes.snapshotLength;
 
-	clearOneItem.hidden = !LineMarkerService.mFindMarker(document.popupNode);
+	clearOneItem.hidden = !LineMarkerService.mFindMarker(this.popupNode);
 },
 
 
