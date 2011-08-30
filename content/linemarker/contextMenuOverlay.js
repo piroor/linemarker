@@ -734,7 +734,7 @@ init : function(aPersist)
 		var newURI = this.IOService.newURI('chrome://linemarker/locale/linemarker.rdf', null, null);
 
 		var PERSIST = Components.classes['@mozilla.org/embedding/browser/nsWebBrowserPersist;1'].createInstance(Components.interfaces.nsIWebBrowserPersist);
-		if (PERSIST.saveURI.arity == 3) // old implementation
+		if (PERSIST.saveURI.length == 3) // old implementation
 			PERSIST.saveURI(newURI, null, tempLocalFile);
 		else
 			PERSIST.saveURI(newURI, null, null, null, null, tempLocalFile);
