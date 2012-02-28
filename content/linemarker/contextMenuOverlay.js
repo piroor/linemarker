@@ -780,7 +780,8 @@ initWithDelay : function()
 			continue;
 		}
 
-		rule = '-moz-appearance: none !important;';
+		rule = 'appearance: none !important;'+
+				'-moz-appearance: none !important;';
 		if (items[i].getAttribute('lm-style'))
 			rule += items[i].getAttribute('lm-style')+';';
 		if (items[i].getAttribute('lm-color'))
