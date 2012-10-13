@@ -182,4 +182,4 @@ step2: NS/MozÇÃçƒãNìÆ
 
 ------------------------------------------------------------------------
 Line Marker for NS7 & Moz & Firefox
-Copyright 2002-2006 Piro(SHIMODA Hiroshi)
+Copyright 2002-2006 Piro(YUKI "Piro" Hiroshi)
