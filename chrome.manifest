@@ -1,9 +1,9 @@
-content	linemarker	jar:chrome/linemarker.jar!/content/linemarker/
+content	linemarker	content/linemarker/
 
 overlay	chrome://communicator/content/contentAreaContextOverlay.xul	chrome://linemarker/content/contextMenuOverlay.xul
 overlay	chrome://browser/content/browser.xul	chrome://linemarker/content/contextMenuOverlay.xul
 
-locale	linemarker	en-US	jar:chrome/linemarker.jar!/locale/en-US/linemarker/
-locale	linemarker	ja-JP	jar:chrome/linemarker.jar!/locale/ja-JP/linemarker/
+locale	linemarker	en-US	locale/en-US/linemarker/
+locale	linemarker	ja-JP	locale/ja-JP/linemarker/
 
-skin	linemarker	classic/1.0	jar:chrome/linemarker.jar!/skin/classic/linemarker/
+skin	linemarker	classic/1.0	skin/classic/linemarker/
