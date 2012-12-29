@@ -9,7 +9,8 @@
                    em:creator="YUKI &quot;Piro&quot; Hiroshi"
                    em:description="Adds a new menu &quot;Line Marker&quot; to the context menu. It changes color of selection."
                    em:homepageURL="http://piro.sakura.ne.jp/xul/_linemarker.html.en"
-                   em:iconURL="chrome://linemarker/content/icon.png">
+                   em:iconURL="chrome://linemarker/content/icon.png"
+                   em:type="2">
 <!--
                    em:optionsURL=""
 -->
