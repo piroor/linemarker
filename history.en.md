@@ -1,5 +1,8 @@
 # History
 
+ - master/HEAD
+   * Modified: "jar" archive is no longer included.
+   * Many tiny fixes. See the [commit log](https://github.com/piroor/linemarker/commits/master) for more information.
  - 2.0.2009110201
    * Works on Firefox 3.6 and Minefield.
  - 2.0.2008040701

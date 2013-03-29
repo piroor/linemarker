@@ -1,5 +1,8 @@
 # 更新履歴
 
+ - master/HEAD
+   * jarファイルを含めない形のパッケージングに変更
+   * 細かい修正色々（詳しくは[コミットログ](https://github.com/piroor/linemarker/commits/master)を参照）
  - 2.0.2009110201
    * Firefox 3.6およびMinefieldにインストールできるようにした
  - 2.0.2008040701
