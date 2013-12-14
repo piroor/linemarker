@@ -41,9 +41,6 @@
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-<script type="application/javascript" src="chrome://global/content/XPCNativeWrapper.js"/>
-<script type="application/javascript" src="chrome://linemarker/content/pXPCNativeWrapper.js"/>
-
 <script type="application/javascript" src="contextMenuOverlay.js"/>
 
 <popup id="contentAreaContextMenu">

@@ -50,7 +50,7 @@ get popupNode()
 setMarker : function(aNode, aData, aDelay)
 {
 	var targetWindow = aData ? aData.window : document.commandDispatcher.focusedWindow ;
-	if (!targetWindow || Components.lookupMethod(targetWindow, 'top').call(targetWindow) == window)
+	if (!targetWindow || targetWindow.top == window)
 		targetWindow = gBrowser.contentWindow;
 
 	var winWrapper = new XPCNativeWrapper(targetWindow,
