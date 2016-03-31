@@ -1,3 +1,5 @@
+**Important note**:
+This project was completely obsolete. Wired-Marker https://addons.mozilla.org/firefox/addon/wired-marker/ or something others are good alternative.
 
 ========================================================================
             ラインマーカー for Netscape 7 & Mozilla & Firefox
