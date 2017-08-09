@@ -649,7 +649,7 @@ getFileFromURL : function(aURL)
 			tempLocalFile = this.IOService.getFileFromURLSpec(aURL);
 		}
 		catch(ex) { // [[interchangeability for Mozilla 1.0.x]]
-			tempLocalFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+			tempLocalFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsIFile);
 			this.IOService.initFileFromURLSpec(tempLocalFile, aURL);
 		}
 	}
@@ -672,7 +672,7 @@ makeURIFromSpec : function(aURI)
 					tempLocalFile = this.IOService.getFileFromURLSpec(aURI);
 				}
 				catch(ex) { // [[interchangeability for Mozilla 1.0.x]]
-					tempLocalFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+					tempLocalFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsIFile);
 					this.IOService.initFileFromURLSpec(tempLocalFile, aURI);
 				}
 			}
@@ -713,9 +713,9 @@ init : function(aPersist)
 	// RDFデータソースの指定を初期化
 
 	const DIR = Components.classes['@mozilla.org/file/directory_service;1'].getService(Components.interfaces.nsIProperties);
-	var dir = DIR.get('ProfD', Components.interfaces.nsILocalFile);
+	var dir = DIR.get('ProfD', Components.interfaces.nsIFile);
 
-	var tempLocalFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+	var tempLocalFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsIFile);
 	tempLocalFile.initWithPath(dir.path);
 
 	var profileDir;
